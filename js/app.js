@@ -1,4 +1,6 @@
 'use strict';
+let animalInformation=[];
+let uniqueKeyWords=[];
 
 function HornyAnimals (prop){
     this.title=prop.title;
@@ -6,8 +8,8 @@ function HornyAnimals (prop){
     this.description=prop.description;
     this.keyword=prop.keyword;
     this.horns=prop.horns;
+    animalInformation.push(this);
 } 
-
 
 HornyAnimals.prototype.render = function(){
     
@@ -19,6 +21,12 @@ HornyAnimals.prototype.render = function(){
     infoContainer.removeClass('photo-template');
     infoContainer.attr('class',this.keyword);
     $('main').append(infoContainer);
+
+    if(uniqueKeyWords.includes(this.keyword)==true){}
+    else{uniqueKeyWords.push(this.keyword);
+      $('select').append(`<option value=${this.keyword}>${this.keyword}</option>`)
+    }
+    console.log(uniqueKeyWords);
     
 }
 
@@ -27,11 +35,22 @@ const ajaxSettings = {
     dataType: 'json'
   };
 
-
   $.ajax('data/page-1.json', ajaxSettings).then((data) => {
     data.forEach(prop => {
       let hornObject=new HornyAnimals(prop);
-      console.log(hornObject);
+      // console.log(hornObject);
       hornObject.render();
     });
+    $('div').first().remove();
   });
+
+  $('select').on('click', function(){
+    let optionSelected=$(this).val();
+    animalInformation.forEach(element=>{
+      if(element.keyword==optionSelected){
+        $(`div.${element.keyword}`).show();
+      }else{
+        $(`div.${element.keyword}`).hide();
+      }
+    })
+  })
