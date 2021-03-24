@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+body{
+    background-color: aquamarine;
+    font-family:'Roboto', sans-serif; 
+}
+
+
+
 img{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+}
+
+div{
+    width: 25%;
+    float: left;
+    margin: 20px;
+    
+}
+
+footer{
+    clear: both;
 }
