@@ -2,35 +2,35 @@
 
 
 
-Number and name of feature: ________________________________
+Number and name of feature: Feature 1, Display images
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: one hour
 
-Start time: _____
+Start time: 10:30 pm-
 
-Finish time: _____
+Finish time: ___11:30pm__
 
-Actual time needed to complete: _____
-
-
-Number and name of feature: ________________________________
-
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
+Actual time needed to complete: ___one hour__
 
 
+Number and name of feature: ___2, Filter images_____________________________
 
-Number and name of feature: ________________________________
+Estimate of time needed to complete: _one hour____
 
-Estimate of time needed to complete: _____
+Start time: __3:20 am___
 
-Start time: _____
+Finish time: ____4:20am_
 
-Finish time: _____
+Actual time needed to complete: __one hour___
 
-Actual time needed to complete: _____
+
+
+Number and name of feature: __________#3: Style the application______________________
+
+Estimate of time needed to complete: ___20 minutes__
+
+Start time: ___4:35__
+
+Finish time: ___4:54__
+
+Actual time needed to complete: ____20 minutes_
