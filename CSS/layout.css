@@ -1,14 +1,12 @@
-#H1{
-    text-align: center;
+header select {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 115px;
 }
 
-
-#par{
-    width:40% ;
+header button {
+    margin-left: 450px;
+    width: 115px;
 }
-
-#H2{
-    font-size: large;
-    text-align: justify;
-}
-
